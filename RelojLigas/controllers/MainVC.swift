@@ -67,7 +67,7 @@ class MainVC: UIViewController{
     
     @IBAction func toggleView(_ sender: UIButton) {
         isMenuExpanded = !isMenuExpanded
-        UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.4, options: [], animations: {
+        UIView.animate(withDuration: 0.2, delay: 0, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, options: [], animations: {
             self.collapseConstraint.priority  = UILayoutPriority(rawValue: UILayoutPriority.RawValue(self.isMenuExpanded ? 1 : 999))
             self.expandedConstraint.priority = UILayoutPriority(rawValue: UILayoutPriority.RawValue(self.isMenuExpanded ? 999 : 1))
             self.view.layoutIfNeeded()
@@ -128,7 +128,7 @@ class MainVC: UIViewController{
     
     func configureView(){
         timerManager = TimerManager()
-        self.view.backgroundColor = GradientColor(gradientStyle: .topToBottom, frame: self.view.bounds, colors: [UIColor.flatNavyBlue(), UIColor.white])
+        self.view.backgroundColor = GradientColor(gradientStyle: .topToBottom, frame: self.view.bounds, colors: [UIColor.flatNavyBlue(), UIColor.flatWhiteColorDark()])
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(MainVC.triggerAction))
         let doubleTapGesture = UITapGestureRecognizer(target: self, action: #selector(MainVC.triggerSecondaryAction))
         let longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(MainVC.resetTimer(longPressRecognizer:)))

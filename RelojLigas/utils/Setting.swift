@@ -18,7 +18,7 @@ struct Setting{
     var maxShootingTime : CGFloat
     
     func convertToMinutes(seconds : Int, minimumText : Bool = true) -> String{
-        if seconds > 60{
+        if seconds >= 60{
             return "\(seconds / 60) \(minimumText ? "mins" : "minutos")"
         }else{
             return "\(seconds) \(minimumText ? "secs" : "segundos")"

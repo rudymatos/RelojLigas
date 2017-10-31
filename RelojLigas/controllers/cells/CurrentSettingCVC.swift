@@ -15,6 +15,7 @@ protocol SettingOperationDelegate{
 
 class CurrentSettingCVC: UICollectionViewCell {
     
+    @IBOutlet weak var mainShadowViewCard: UIView!
     @IBOutlet weak var mainViewCard: UIView!
     @IBOutlet weak var settingNameLBL: UILabel!
     @IBOutlet weak var settingDetailsLBL: UILabel!
@@ -36,19 +37,22 @@ class CurrentSettingCVC: UICollectionViewCell {
         mainViewCard.layer.cornerRadius = 10
         mainViewCard.layer.borderWidth = 0.3
         mainViewCard.layer.borderColor = UIColor.black.cgColor
-        mainViewCard.layer.shadowColor = UIColor.black.cgColor
-        mainViewCard.layer.shadowOpacity = 0.7
-        mainViewCard.layer.shadowRadius = 4.0
-        mainViewCard.layer.shadowOffset = CGSize(width: 3, height: 3)
+        mainViewCard.layer.masksToBounds = true
         useSettingBTN.layer.cornerRadius = 10
         editSettingBTN.layer.cornerRadius = 10
+        
+        mainShadowViewCard.layer.shadowColor = UIColor.black.cgColor
+        mainShadowViewCard.layer.shadowOpacity = 0.7
+        mainShadowViewCard.layer.shadowRadius = 4.0
+        mainShadowViewCard.layer.shadowOffset = CGSize(width: 3, height: 3)
+        mainShadowViewCard.layer.masksToBounds = false
         
         if let currentSetting = currentSetting{
             settingNameLBL.text = currentSetting.name
             settingDescriptionLBL.text = currentSetting.description
-            gameTimeLBL.text = currentSetting.convertToMinutes(seconds: Int(currentSetting.gameTotalSeconds))
-            startShootingCounterAtMinutesLBL.text = currentSetting.convertToMinutes(seconds: Int(currentSetting.startShootingCountingAtSecond))
-            shotClockLBL.text =  currentSetting.convertToMinutes(seconds: Int(currentSetting.maxShootingTime))
+            gameTimeLBL.text = " \(currentSetting.convertToMinutes(seconds: Int(currentSetting.gameTotalSeconds))) "
+            startShootingCounterAtMinutesLBL.text = " \(currentSetting.convertToMinutes(seconds: Int(currentSetting.startShootingCountingAtSecond))) "
+            shotClockLBL.text =  " \(currentSetting.convertToMinutes(seconds: Int(currentSetting.maxShootingTime))) "
             
             settingDetailsLBL.text = "En este modo los jugadores tienen \(currentSetting.convertToMinutes(seconds: Int(currentSetting.gameTotalSeconds),minimumText: false)) de juego donde se empezara el reloj de tiro en los ultimos \(currentSetting.convertToMinutes(seconds: Int(currentSetting.startShootingCountingAtSecond),minimumText: false)) restantes del partido y se le otorgaran \(currentSetting.convertToMinutes(seconds: Int(currentSetting.maxShootingTime),minimumText: false)) a cada equipo por posesion "
             
