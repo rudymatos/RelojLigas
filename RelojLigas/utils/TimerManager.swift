@@ -37,6 +37,7 @@ class TimerManager{
     }
 }
 
+
 enum TimeDisplay{
     case seconds
     case minutes
