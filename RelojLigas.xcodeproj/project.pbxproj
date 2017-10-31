@@ -1,0 +1,550 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		69A84BF37126C121F98A6946 /* Pods_RelojLigas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D294BE47D11D2A74A0DEA9D /* Pods_RelojLigas.framework */; };
+		F509C45E1F85E3BD002EA12F /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F509C45D1F85E3BD002EA12F /* UIView+Extension.swift */; };
+		F57293291F84813C00017031 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57293281F84813C00017031 /* AppDelegate.swift */; };
+		F572932B1F84813C00017031 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F572932A1F84813C00017031 /* MainVC.swift */; };
+		F572932E1F84813C00017031 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F572932C1F84813C00017031 /* Main.storyboard */; };
+		F57293301F84813C00017031 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F572932F1F84813C00017031 /* Assets.xcassets */; };
+		F57293331F84813C00017031 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F57293311F84813C00017031 /* LaunchScreen.storyboard */; };
+		F59640DF1F8A98C400A54CF7 /* GameTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59640DE1F8A98C400A54CF7 /* GameTimeView.swift */; };
+		F59640E11F8A98D400A54CF7 /* LastMinutesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59640E01F8A98D400A54CF7 /* LastMinutesView.swift */; };
+		F59640E31F8A98E000A54CF7 /* ShootingTimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59640E21F8A98E000A54CF7 /* ShootingTimerView.swift */; };
+		F59640FD1F8AA0EC00A54CF7 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = F59640ED1F8A98FA00A54CF7 /* SF-Pro-Display-Bold.otf */; };
+		F59640FE1F8AA0EC00A54CF7 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F59640E81F8A98F900A54CF7 /* SF-Pro-Display-Regular.otf */; };
+		F59641001F8AB99200A54CF7 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59640FF1F8AB99200A54CF7 /* Setting.swift */; };
+		F59641021F8AF42900A54CF7 /* RelojLigaComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59641011F8AF42900A54CF7 /* RelojLigaComponents.swift */; };
+		F5B6D2431FA50BC800EF7123 /* MainVC+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B6D2421FA50BC800EF7123 /* MainVC+Extension.swift */; };
+		F5B6D2451FA50FC600EF7123 /* CurrentSettingCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B6D2441FA50FC600EF7123 /* CurrentSettingCVC.swift */; };
+		F5DDCCB41F8487030097A68E /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DDCCB31F8487030097A68E /* TimerManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9D294BE47D11D2A74A0DEA9D /* Pods_RelojLigas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RelojLigas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5AAF9C694565C8962749073 /* Pods-RelojLigas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RelojLigas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RelojLigas/Pods-RelojLigas.debug.xcconfig"; sourceTree = "<group>"; };
+		DA2D077D7FBA888D1A8632EC /* Pods-RelojLigas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RelojLigas.release.xcconfig"; path = "Pods/Target Support Files/Pods-RelojLigas/Pods-RelojLigas.release.xcconfig"; sourceTree = "<group>"; };
+		F509C45D1F85E3BD002EA12F /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		F57293251F84813C00017031 /* RelojLigas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RelojLigas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F57293281F84813C00017031 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F572932A1F84813C00017031 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		F572932D1F84813C00017031 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F572932F1F84813C00017031 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F57293321F84813C00017031 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F57293341F84813C00017031 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F59640DE1F8A98C400A54CF7 /* GameTimeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTimeView.swift; sourceTree = "<group>"; };
+		F59640E01F8A98D400A54CF7 /* LastMinutesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastMinutesView.swift; sourceTree = "<group>"; };
+		F59640E21F8A98E000A54CF7 /* ShootingTimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShootingTimerView.swift; sourceTree = "<group>"; };
+		F59640E51F8A98F800A54CF7 /* SF-Pro-Display-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-MediumItalic.otf"; sourceTree = "<group>"; };
+		F59640E61F8A98F900A54CF7 /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
+		F59640E71F8A98F900A54CF7 /* SF-Pro-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Light.otf"; sourceTree = "<group>"; };
+		F59640E81F8A98F900A54CF7 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
+		F59640E91F8A98F900A54CF7 /* SF-Pro-Display-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Thin.otf"; sourceTree = "<group>"; };
+		F59640EA1F8A98F900A54CF7 /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
+		F59640EB1F8A98F900A54CF7 /* SF-Pro-Display-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Heavy.otf"; sourceTree = "<group>"; };
+		F59640EC1F8A98F900A54CF7 /* SF-Pro-Display-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-ThinItalic.otf"; sourceTree = "<group>"; };
+		F59640ED1F8A98FA00A54CF7 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
+		F59640EE1F8A98FA00A54CF7 /* SF-Pro-Display-UltralightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-UltralightItalic.otf"; sourceTree = "<group>"; };
+		F59640EF1F8A98FA00A54CF7 /* SF-Pro-Display-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-BlackItalic.otf"; sourceTree = "<group>"; };
+		F59640F01F8A98FA00A54CF7 /* SF-Pro-Display-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Ultralight.otf"; sourceTree = "<group>"; };
+		F59640F11F8A98FA00A54CF7 /* SF-Pro-Display-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Black.otf"; sourceTree = "<group>"; };
+		F59640F21F8A98FA00A54CF7 /* SF-Pro-Display-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-BoldItalic.otf"; sourceTree = "<group>"; };
+		F59640F31F8A98FA00A54CF7 /* SF-Pro-Display-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-RegularItalic.otf"; sourceTree = "<group>"; };
+		F59640F41F8A98FB00A54CF7 /* SF-Pro-Display-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-HeavyItalic.otf"; sourceTree = "<group>"; };
+		F59640F51F8A98FB00A54CF7 /* SF-Pro-Display-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		F59640F61F8A98FB00A54CF7 /* SF-Pro-Display-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-LightItalic.otf"; sourceTree = "<group>"; };
+		F59640FF1F8AB99200A54CF7 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
+		F59641011F8AF42900A54CF7 /* RelojLigaComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelojLigaComponents.swift; sourceTree = "<group>"; };
+		F5B6D2421FA50BC800EF7123 /* MainVC+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainVC+Extension.swift"; sourceTree = "<group>"; };
+		F5B6D2441FA50FC600EF7123 /* CurrentSettingCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentSettingCVC.swift; sourceTree = "<group>"; };
+		F5DDCCB31F8487030097A68E /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F57293221F84813C00017031 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69A84BF37126C121F98A6946 /* Pods_RelojLigas.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		139A3BCFC01F062841900764 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D5AAF9C694565C8962749073 /* Pods-RelojLigas.debug.xcconfig */,
+				DA2D077D7FBA888D1A8632EC /* Pods-RelojLigas.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9424E39BCE1F684652947169 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D294BE47D11D2A74A0DEA9D /* Pods_RelojLigas.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5415C3C1F8A97FE00B541BE /* components */ = {
+			isa = PBXGroup;
+			children = (
+				F59641011F8AF42900A54CF7 /* RelojLigaComponents.swift */,
+				F59640DE1F8A98C400A54CF7 /* GameTimeView.swift */,
+				F59640E01F8A98D400A54CF7 /* LastMinutesView.swift */,
+				F59640E21F8A98E000A54CF7 /* ShootingTimerView.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		F5415C3D1F8A981400B541BE /* supporting_files */ = {
+			isa = PBXGroup;
+			children = (
+				F59640E41F8A98E800A54CF7 /* fonts */,
+				F57293281F84813C00017031 /* AppDelegate.swift */,
+				F572932F1F84813C00017031 /* Assets.xcassets */,
+				F57293311F84813C00017031 /* LaunchScreen.storyboard */,
+			);
+			path = supporting_files;
+			sourceTree = "<group>";
+		};
+		F5415C3E1F8A982B00B541BE /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F5B6D2461FA50FCB00EF7123 /* cells */,
+				F5415C3C1F8A97FE00B541BE /* components */,
+				F572932A1F84813C00017031 /* MainVC.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		F5415C3F1F8A983600B541BE /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				F5DDCCB31F8487030097A68E /* TimerManager.swift */,
+				F59640FF1F8AB99200A54CF7 /* Setting.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		F5415C401F8A984000B541BE /* exts */ = {
+			isa = PBXGroup;
+			children = (
+				F509C45D1F85E3BD002EA12F /* UIView+Extension.swift */,
+				F5B6D2421FA50BC800EF7123 /* MainVC+Extension.swift */,
+			);
+			path = exts;
+			sourceTree = "<group>";
+		};
+		F5415C411F8A984A00B541BE /* views */ = {
+			isa = PBXGroup;
+			children = (
+				F572932C1F84813C00017031 /* Main.storyboard */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		F572931C1F84813C00017031 = {
+			isa = PBXGroup;
+			children = (
+				F57293271F84813C00017031 /* RelojLigas */,
+				F57293261F84813C00017031 /* Products */,
+				139A3BCFC01F062841900764 /* Pods */,
+				9424E39BCE1F684652947169 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F57293261F84813C00017031 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F57293251F84813C00017031 /* RelojLigas.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F57293271F84813C00017031 /* RelojLigas */ = {
+			isa = PBXGroup;
+			children = (
+				F5415C411F8A984A00B541BE /* views */,
+				F5415C401F8A984000B541BE /* exts */,
+				F5415C3F1F8A983600B541BE /* utils */,
+				F5415C3E1F8A982B00B541BE /* controllers */,
+				F5415C3D1F8A981400B541BE /* supporting_files */,
+				F57293341F84813C00017031 /* Info.plist */,
+			);
+			path = RelojLigas;
+			sourceTree = "<group>";
+		};
+		F59640E41F8A98E800A54CF7 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				F59640F11F8A98FA00A54CF7 /* SF-Pro-Display-Black.otf */,
+				F59640EF1F8A98FA00A54CF7 /* SF-Pro-Display-BlackItalic.otf */,
+				F59640ED1F8A98FA00A54CF7 /* SF-Pro-Display-Bold.otf */,
+				F59640F21F8A98FA00A54CF7 /* SF-Pro-Display-BoldItalic.otf */,
+				F59640EB1F8A98F900A54CF7 /* SF-Pro-Display-Heavy.otf */,
+				F59640F41F8A98FB00A54CF7 /* SF-Pro-Display-HeavyItalic.otf */,
+				F59640E71F8A98F900A54CF7 /* SF-Pro-Display-Light.otf */,
+				F59640F61F8A98FB00A54CF7 /* SF-Pro-Display-LightItalic.otf */,
+				F59640E61F8A98F900A54CF7 /* SF-Pro-Display-Medium.otf */,
+				F59640E51F8A98F800A54CF7 /* SF-Pro-Display-MediumItalic.otf */,
+				F59640E81F8A98F900A54CF7 /* SF-Pro-Display-Regular.otf */,
+				F59640F31F8A98FA00A54CF7 /* SF-Pro-Display-RegularItalic.otf */,
+				F59640EA1F8A98F900A54CF7 /* SF-Pro-Display-Semibold.otf */,
+				F59640F51F8A98FB00A54CF7 /* SF-Pro-Display-SemiboldItalic.otf */,
+				F59640E91F8A98F900A54CF7 /* SF-Pro-Display-Thin.otf */,
+				F59640EC1F8A98F900A54CF7 /* SF-Pro-Display-ThinItalic.otf */,
+				F59640F01F8A98FA00A54CF7 /* SF-Pro-Display-Ultralight.otf */,
+				F59640EE1F8A98FA00A54CF7 /* SF-Pro-Display-UltralightItalic.otf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		F5B6D2461FA50FCB00EF7123 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				F5B6D2441FA50FC600EF7123 /* CurrentSettingCVC.swift */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F57293241F84813C00017031 /* RelojLigas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F57293371F84813C00017031 /* Build configuration list for PBXNativeTarget "RelojLigas" */;
+			buildPhases = (
+				9A4CBB6C9E5774C4CFBF053B /* [CP] Check Pods Manifest.lock */,
+				F57293211F84813C00017031 /* Sources */,
+				F57293221F84813C00017031 /* Frameworks */,
+				F57293231F84813C00017031 /* Resources */,
+				B26A9C102EC4511E15A3F8BB /* [CP] Embed Pods Frameworks */,
+				B579DAA9B6BDF89E611C13D0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RelojLigas;
+			productName = RelojLigas;
+			productReference = F57293251F84813C00017031 /* RelojLigas.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F572931D1F84813C00017031 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Bearded Gentleman";
+				TargetAttributes = {
+					F57293241F84813C00017031 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F57293201F84813C00017031 /* Build configuration list for PBXProject "RelojLigas" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F572931C1F84813C00017031;
+			productRefGroup = F57293261F84813C00017031 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F57293241F84813C00017031 /* RelojLigas */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F57293231F84813C00017031 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F59640FD1F8AA0EC00A54CF7 /* SF-Pro-Display-Bold.otf in Resources */,
+				F59640FE1F8AA0EC00A54CF7 /* SF-Pro-Display-Regular.otf in Resources */,
+				F57293331F84813C00017031 /* LaunchScreen.storyboard in Resources */,
+				F57293301F84813C00017031 /* Assets.xcassets in Resources */,
+				F572932E1F84813C00017031 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9A4CBB6C9E5774C4CFBF053B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RelojLigas-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B26A9C102EC4511E15A3F8BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RelojLigas/Pods-RelojLigas-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RelojLigas/Pods-RelojLigas-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B579DAA9B6BDF89E611C13D0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RelojLigas/Pods-RelojLigas-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F57293211F84813C00017031 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5DDCCB41F8487030097A68E /* TimerManager.swift in Sources */,
+				F572932B1F84813C00017031 /* MainVC.swift in Sources */,
+				F59640E31F8A98E000A54CF7 /* ShootingTimerView.swift in Sources */,
+				F59640E11F8A98D400A54CF7 /* LastMinutesView.swift in Sources */,
+				F509C45E1F85E3BD002EA12F /* UIView+Extension.swift in Sources */,
+				F5B6D2431FA50BC800EF7123 /* MainVC+Extension.swift in Sources */,
+				F59640DF1F8A98C400A54CF7 /* GameTimeView.swift in Sources */,
+				F5B6D2451FA50FC600EF7123 /* CurrentSettingCVC.swift in Sources */,
+				F57293291F84813C00017031 /* AppDelegate.swift in Sources */,
+				F59641001F8AB99200A54CF7 /* Setting.swift in Sources */,
+				F59641021F8AF42900A54CF7 /* RelojLigaComponents.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F572932C1F84813C00017031 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F572932D1F84813C00017031 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F57293311F84813C00017031 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F57293321F84813C00017031 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F57293351F84813C00017031 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F57293361F84813C00017031 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F57293381F84813C00017031 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5AAF9C694565C8962749073 /* Pods-RelojLigas.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NYFE69T5LQ;
+				INFOPLIST_FILE = RelojLigas/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.beardedgentleman.internaldevs.RelojLigas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F57293391F84813C00017031 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA2D077D7FBA888D1A8632EC /* Pods-RelojLigas.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = NYFE69T5LQ;
+				INFOPLIST_FILE = RelojLigas/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.beardedgentleman.internaldevs.RelojLigas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F57293201F84813C00017031 /* Build configuration list for PBXProject "RelojLigas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F57293351F84813C00017031 /* Debug */,
+				F57293361F84813C00017031 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F57293371F84813C00017031 /* Build configuration list for PBXNativeTarget "RelojLigas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F57293381F84813C00017031 /* Debug */,
+				F57293391F84813C00017031 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F572931D1F84813C00017031 /* Project object */;
+}
