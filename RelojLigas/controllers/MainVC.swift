@@ -53,6 +53,13 @@ class MainVC: UIViewController{
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "selectSettingSegue"{
+            let destinationVC = segue.destination as! SelectSettingDialogVC
+            destinationVC.settings = settings
+        }
+    }
+    
     private func handleShootingTimer(){
         currentShootingSeconds -= 1
         if currentSetting.gameTotalSeconds > currentSetting.maxShootingTime{
@@ -96,7 +103,10 @@ class MainVC: UIViewController{
         }
     }
     
+    
+    
     @objc private func triggerAction(){
+        
         if let timerManager = timerManager {
             let timerState = timerManager.getTimerCurrentState()
             switch(timerState){

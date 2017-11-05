@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		69A84BF37126C121F98A6946 /* Pods_RelojLigas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D294BE47D11D2A74A0DEA9D /* Pods_RelojLigas.framework */; };
 		F509C45E1F85E3BD002EA12F /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F509C45D1F85E3BD002EA12F /* UIView+Extension.swift */; };
+		F5615E691FAE719E004F67A4 /* ColorSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5615E681FAE719E004F67A4 /* ColorSetting.swift */; };
+		F5615E6B1FAEAC6E004F67A4 /* SelectSettingDialogVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5615E6A1FAEAC6E004F67A4 /* SelectSettingDialogVC.swift */; };
 		F57293291F84813C00017031 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57293281F84813C00017031 /* AppDelegate.swift */; };
 		F572932B1F84813C00017031 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F572932A1F84813C00017031 /* MainVC.swift */; };
 		F572932E1F84813C00017031 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F572932C1F84813C00017031 /* Main.storyboard */; };
@@ -21,7 +23,7 @@
 		F59640FE1F8AA0EC00A54CF7 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = F59640E81F8A98F900A54CF7 /* SF-Pro-Display-Regular.otf */; };
 		F59641001F8AB99200A54CF7 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59640FF1F8AB99200A54CF7 /* Setting.swift */; };
 		F59641021F8AF42900A54CF7 /* RelojLigaComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59641011F8AF42900A54CF7 /* RelojLigaComponents.swift */; };
-		F5B6D2431FA50BC800EF7123 /* MainVC+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B6D2421FA50BC800EF7123 /* MainVC+Extension.swift */; };
+		F59C02101FA82A5B0006B187 /* ConfirmationDialogVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59C020F1FA82A5B0006B187 /* ConfirmationDialogVC.swift */; };
 		F5B6D2451FA50FC600EF7123 /* CurrentSettingCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B6D2441FA50FC600EF7123 /* CurrentSettingCVC.swift */; };
 		F5DDCCB41F8487030097A68E /* TimerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DDCCB31F8487030097A68E /* TimerManager.swift */; };
 /* End PBXBuildFile section */
@@ -31,6 +33,8 @@
 		D5AAF9C694565C8962749073 /* Pods-RelojLigas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RelojLigas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RelojLigas/Pods-RelojLigas.debug.xcconfig"; sourceTree = "<group>"; };
 		DA2D077D7FBA888D1A8632EC /* Pods-RelojLigas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RelojLigas.release.xcconfig"; path = "Pods/Target Support Files/Pods-RelojLigas/Pods-RelojLigas.release.xcconfig"; sourceTree = "<group>"; };
 		F509C45D1F85E3BD002EA12F /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		F5615E681FAE719E004F67A4 /* ColorSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSetting.swift; sourceTree = "<group>"; };
+		F5615E6A1FAEAC6E004F67A4 /* SelectSettingDialogVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSettingDialogVC.swift; sourceTree = "<group>"; };
 		F57293251F84813C00017031 /* RelojLigas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RelojLigas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F57293281F84813C00017031 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F572932A1F84813C00017031 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
@@ -61,7 +65,7 @@
 		F59640F61F8A98FB00A54CF7 /* SF-Pro-Display-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-LightItalic.otf"; sourceTree = "<group>"; };
 		F59640FF1F8AB99200A54CF7 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		F59641011F8AF42900A54CF7 /* RelojLigaComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelojLigaComponents.swift; sourceTree = "<group>"; };
-		F5B6D2421FA50BC800EF7123 /* MainVC+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MainVC+Extension.swift"; sourceTree = "<group>"; };
+		F59C020F1FA82A5B0006B187 /* ConfirmationDialogVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationDialogVC.swift; sourceTree = "<group>"; };
 		F5B6D2441FA50FC600EF7123 /* CurrentSettingCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentSettingCVC.swift; sourceTree = "<group>"; };
 		F5DDCCB31F8487030097A68E /* TimerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -123,6 +127,8 @@
 				F5B6D2461FA50FCB00EF7123 /* cells */,
 				F5415C3C1F8A97FE00B541BE /* components */,
 				F572932A1F84813C00017031 /* MainVC.swift */,
+				F59C020F1FA82A5B0006B187 /* ConfirmationDialogVC.swift */,
+				F5615E6A1FAEAC6E004F67A4 /* SelectSettingDialogVC.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -132,6 +138,7 @@
 			children = (
 				F5DDCCB31F8487030097A68E /* TimerManager.swift */,
 				F59640FF1F8AB99200A54CF7 /* Setting.swift */,
+				F5615E681FAE719E004F67A4 /* ColorSetting.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -140,7 +147,6 @@
 			isa = PBXGroup;
 			children = (
 				F509C45D1F85E3BD002EA12F /* UIView+Extension.swift */,
-				F5B6D2421FA50BC800EF7123 /* MainVC+Extension.swift */,
 			);
 			path = exts;
 			sourceTree = "<group>";
@@ -349,16 +355,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5DDCCB41F8487030097A68E /* TimerManager.swift in Sources */,
+				F5615E6B1FAEAC6E004F67A4 /* SelectSettingDialogVC.swift in Sources */,
+				F5615E691FAE719E004F67A4 /* ColorSetting.swift in Sources */,
 				F572932B1F84813C00017031 /* MainVC.swift in Sources */,
 				F59640E31F8A98E000A54CF7 /* ShootingTimerView.swift in Sources */,
 				F59640E11F8A98D400A54CF7 /* LastMinutesView.swift in Sources */,
 				F509C45E1F85E3BD002EA12F /* UIView+Extension.swift in Sources */,
-				F5B6D2431FA50BC800EF7123 /* MainVC+Extension.swift in Sources */,
 				F59640DF1F8A98C400A54CF7 /* GameTimeView.swift in Sources */,
 				F5B6D2451FA50FC600EF7123 /* CurrentSettingCVC.swift in Sources */,
 				F57293291F84813C00017031 /* AppDelegate.swift in Sources */,
 				F59641001F8AB99200A54CF7 /* Setting.swift in Sources */,
 				F59641021F8AF42900A54CF7 /* RelojLigaComponents.swift in Sources */,
+				F59C02101FA82A5B0006B187 /* ConfirmationDialogVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
